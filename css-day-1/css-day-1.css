@@ -58,6 +58,7 @@ body {
 .form__input:focus {
   transform: scale(0.98) translateY(-2px);
   opacity: 95%;
+  border: 1px solid #171645;
 }
 .logo-image {
   height: 1rem;
