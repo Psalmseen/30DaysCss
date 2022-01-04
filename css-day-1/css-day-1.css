@@ -70,13 +70,16 @@ body {
 }
 .info {
   margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .info span {
   display: inline-block;
-  padding: 0.5rem;
-  font-size: 2rem;
+  padding: 0 0.5rem;
   font-weight: bolder;
-  margin-top: -1rem;
+  align-self: bottom;
+  font-size: 2rem;
 }
 
 ::placeholder {
