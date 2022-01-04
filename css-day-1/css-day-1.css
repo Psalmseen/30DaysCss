@@ -20,6 +20,7 @@ body {
   background-color: #f8f8f8;
   padding: 3rem;
   border-radius: 1rem;
+  margin: 2rem 0;
 }
 .form__header {
   text-align: center;
@@ -28,23 +29,13 @@ body {
   font-weight: 900;
 }
 .form__input {
-  padding: 1rem;
   display: block;
-  margin: 1rem auto;
-  border: 1px solid #dadaf2;
-  outline: none;
-  width: 100%;
   background: #e5e5e5;
 }
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 1rem;
-  margin: 1rem 0;
-  border: 1px solid #dadaf2;
-  outline: none;
   cursor: pointer;
 }
 
@@ -57,6 +48,11 @@ body {
 .form__input {
   transition: all 0.2s;
   border-radius: 5px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid #dadaf2;
+  width: 100%;
 }
 .btn:hover,
 .form__input:focus {
@@ -68,11 +64,11 @@ body {
   padding-right: 0.5rem;
 }
 .or {
-  margin: 2rem;
+  margin: 1.5rem;
   text-transform: uppercase;
 }
 .info {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 .info span {
   display: inline-block;
