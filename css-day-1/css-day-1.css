@@ -66,6 +66,7 @@ body {
 .or {
   margin: 1.5rem;
   text-transform: uppercase;
+  opacity: 60%;
 }
 .info {
   margin-top: 1.2rem;
