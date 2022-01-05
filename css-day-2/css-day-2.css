@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+body {
+  font-family: poppins;
+  background: #e5e5e5;
+  display: grid;
+  place-content: center;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  color: #171228;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.circular-wrapper {
+  width: 55rem;
+  height: 55rem;
+  background-color: #e0e7f8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 70%;
+}
+.content-head {
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #626cd6;
+  padding: 2rem;
+  box-shadow: 0px 16px 25px -10px #535cb540;
+}
+
+.content-head__title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.content-head__body {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+.content-head__body-cta {
+  background: #fff;
+  color: #262040;
+  padding: 0.75rem 1.4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.7rem;
+  margin-left: 2rem;
+  transition: all 0.2s;
+}
+.content-head__body-cta:hover {
+  transform: scale(1.1) translateY(1px);
+  font-weight: 500;
+}
+
+.content-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.documentation-list,
+.resources-list {
+  margin-top: 2rem;
+}
+
+.documentation-list__title,
+.resources-list__title {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6f7189;
+  padding: 0 1rem;
+}
+.documentation-list__links,
+.resources-list__links {
+  display: inline-block;
+  padding: 1rem;
+  transition: all 0.2s;
+  width: 100%;
+}
+.documentation-list__links:hover,
+.resources-list__links:hover {
+  background-color: #f1f2ff;
+  border-radius: 0.4rem;
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
