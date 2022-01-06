@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: poppins;
+  background-color: #e5e5e5;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  color: #1e1d4e;
+  font-size: 1.6rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.container {
+  background-color: #1e1d4e;
+  height: 67.5rem;
+  width: 91.7rem;
+  max-width: 90vw;
+  border-radius: 2.4rem;
+  position: relative;
+}
+.content {
+  background-color: #fff;
+  width: calc(100% + 10rem);
+  max-width: 98vw;
+  padding: 6.4rem 9rem;
+  border-radius: 2.4rem;
+  box-shadow: 30px 4px 84px #16146029;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content__info {
+  width: 41.7rem;
+  max-width: 100%;
+  text-align: center;
+  margin: 2rem auto;
+}
+.content__title {
+  font-size: 2.4rem;
+  font-family: merriweather;
+  font-weight: 900;
+}
+.content__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content__link {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #f3f2fb;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2rem;
+}
+.content__link-img {
+  margin-right: 1rem;
+}
+.creators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
+}
+.creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.arrow {
+  font-size: 3rem;
+}
+.creator__img {
+  height: 9.1rem;
+  width: 9.1rem;
+  border-radius: 50%;
+}
+.creator__img--ludwig {
+  background-image: url("img/lugwig.png");
+  background-size: 150%;
+  background-position: 50% -2.5rem;
+}
+.creator__img--nina {
+  background-image: url("img/nina.png");
+  background-position: 50% -9rem;
+  background-size: 300%;
+}
+.creator__img--karoline {
+  background-image: url("img/Karoline.png");
+  background-position: 44% -15rem;
+  background-size: 340%;
+}
+.creator__name {
+  font-family: merriweather;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+.btn {
+  padding: 0.8rem 1.6rem;
+  background-color: #1e1d4e;
+  color: #fff;
+  border-radius: 3rem;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 700px) {
+  .content {
+    padding: 6.4rem 6rem;
+  }
+  .creator:last-of-type {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+  .creator:nth-last-of-type(2) {
+    display: none;
+  }
+}

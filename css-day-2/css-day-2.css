@@ -95,7 +95,7 @@ li {
 .documentation-list__links,
 .resources-list__links {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   transition: all 0.2s;
   width: 100%;
 }
