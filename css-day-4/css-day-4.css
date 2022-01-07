@@ -17,6 +17,7 @@ html {
   font-size: 10px;
 }
 .container {
+  max-width: 100vw;
 }
 .bell {
   margin-left: auto;
@@ -29,19 +30,19 @@ html {
   width: 7.5rem;
   margin-bottom: 1rem;
 }
-.bell__img {
-}
 .content {
   background-color: #fff;
   border-radius: 1.6rem;
   width: 58.5rem;
   box-shadow: 0 1.4rem 6.4rem #8989b947;
   padding: 5rem;
+  max-width: 100%;
 }
 .content__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 3rem;
   border-bottom: 1px solid #a2a1b4;
 }
@@ -50,12 +51,15 @@ html {
   font-weight: 900;
   line-height: 2.8rem;
   font-size: 2.2rem;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
 }
 .read {
   color: #4b5ade;
   padding: 1rem;
   border-radius: 3rem;
   background-color: #f2f4ff;
+  margin-top: 2rem;
 }
 .content__body {
   display: grid;
@@ -88,7 +92,7 @@ html {
   background-size: 120%;
 }
 .user__text {
-  grid-row: 2 / -1;
+  grid-column: 2 / -1;
   align-self: center;
   justify-self: center;
   font-size: 1.8rem;
@@ -104,9 +108,12 @@ html {
 }
 .btns {
   grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+  row-gap: 2rem;
 }
 .btn {
-  font-family: roboto;
+  font-family: Roboto;
   background: none;
   outline: none;
   border: 1px solid #a2a1b4;
@@ -115,10 +122,32 @@ html {
   color: inherit;
   margin-right: 3rem;
   font-weight: 400;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: scale(0.95) translateY(-2px);
 }
 .btn--dark {
   background: #161544;
   color: #fff;
 }
-.content__later {
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .user__img {
+    grid-column: 1 /-1;
+  }
+  .user__text {
+    grid-column: 1/ -1;
+  }
+  .time {
+    grid-column: 1/ -1;
+  }
+  .btns {
+    grid-column: 1/ -1;
+  }
 }
