@@ -123,6 +123,7 @@ html {
   margin-right: 3rem;
   font-weight: 400;
   transition: all 0.2s;
+  cursor: pointer;
 }
 .btn:hover {
   transform: scale(0.95) translateY(-2px);
