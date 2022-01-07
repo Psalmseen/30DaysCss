@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-content: center;
+  font-family: poppins;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  font-size: 1.6rem;
+  color: #161544;
+}
+html {
+  font-size: 10px;
+}
+.container {
+}
+.bell {
+  margin-left: auto;
+  background-color: #161544;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-bottom: 1rem;
+}
+.bell__img {
+}
+.content {
+  background-color: #fff;
+  border-radius: 1.6rem;
+  width: 58.5rem;
+  box-shadow: 0 1.4rem 6.4rem #8989b947;
+  padding: 5rem;
+}
+.content__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #a2a1b4;
+}
+.notify {
+  font-family: merriweather;
+  font-weight: 900;
+  line-height: 2.8rem;
+  font-size: 2.2rem;
+}
+.read {
+  color: #4b5ade;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #f2f4ff;
+}
+.content__body {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  padding: 4rem 0;
+  column-gap: 1.6rem;
+  row-gap: 2.2rem;
+  border-bottom: 1px solid #a2a1b4;
+  font-size: 1.8rem;
+}
+.content__body:last-of-type {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+.user__img {
+  width: 7.4rem;
+  height: 7.4rem;
+  background-position: center;
+  border-radius: 50%;
+  grid-row: 1 / 2;
+}
+.user__img--paul {
+  background-image: url("./img/paul.png");
+  background-position: 50% -3rem;
+  background-size: 200%;
+}
+.user__img--den {
+  background-image: url("./img/den.png");
+  background-position: 50%;
+  background-size: 120%;
+}
+.user__text {
+  grid-row: 2 / -1;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.8rem;
+}
+.user__name,
+.important {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.time {
+  grid-column: 2 / -1;
+  color: #16154499;
+}
+.btns {
+  grid-column: 2 / -1;
+}
+.btn {
+  font-family: roboto;
+  background: none;
+  outline: none;
+  border: 1px solid #a2a1b4;
+  border-radius: 1.2rem;
+  padding: 2.4rem 4.8rem;
+  color: inherit;
+  margin-right: 3rem;
+  font-weight: 400;
+}
+.btn--dark {
+  background: #161544;
+  color: #fff;
+}
+.content__later {
+}
