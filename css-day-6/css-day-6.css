@@ -34,6 +34,7 @@ body {
   box-shadow: 0 5rem 4.5rem -1.5rem #1215342e;
   border-radius: 2.5rem;
   padding: 5rem;
+  max-width: 95vw;
 }
 .content__header {
   display: flex;
@@ -85,11 +86,13 @@ body {
   border: 1px solid #63658a;
   background-color: #292b48;
   display: flex;
+  flex-wrap: wrap;
   padding: 1.5rem;
   margin-top: 4rem;
 }
 .content__user {
   padding: 0.5rem 2rem 0.5rem 0.5rem;
+  margin: 0.5rem 0;
   display: flex;
   align-items: center;
   background-color: #41436b;
@@ -157,6 +160,7 @@ body {
 
 .content__foot {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-top: 6.3rem;
@@ -166,6 +170,7 @@ body {
   font-size: 1.8rem;
   color: #717fff;
   cursor: pointer;
+  margin: 2rem 0;
 }
 .btns {
   display: grid;
@@ -193,4 +198,20 @@ body {
 .btn:hover,
 .btn:active {
   transform: scale(0.95) translateY(-2px);
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding: 15rem 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+  .wrapper {
+    padding: 5rem 0;
+  }
+  .content {
+    padding: 2rem;
+  }
 }

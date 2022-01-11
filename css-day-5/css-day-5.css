@@ -84,7 +84,7 @@ li {
   padding: 1rem 2rem;
   border-radius: 2.5rem;
   background-color: #142037;
-  margin: 1rem 1rem 1rem 0;
+  margin: 0.5rem 1rem 0.5rem 0;
 }
 .recipe__item:hover {
   background-color: #92b6ff;
