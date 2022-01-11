@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  background-color: #e5e5e5;
+  min-height: 100vh;
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: mulish;
+  color: #fff;
+}
+
+.wrapper {
+  background-color: #292b48;
+  padding: 30rem 0;
+  width: 160rem;
+  max-width: 98vw;
+  display: grid;
+  place-content: center;
+}
+.content {
+  width: 84.5rem;
+  background-color: #2f314f;
+  box-shadow: 0 5rem 4.5rem -1.5rem #1215342e;
+  border-radius: 2.5rem;
+  padding: 5rem;
+}
+.content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__header-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.4rem;
+  width: 5.4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.content__header-back-img {
+  width: 3.2rem;
+}
+.content__setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.content__setting-text {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.content__setting-img {
+  width: 100%;
+}
+.content__setting-cog {
+  cursor: pointer;
+  width: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+.content__title {
+  font-weight: 400;
+  font-size: 3.2rem;
+  width: 30.3rem;
+  margin-top: 3.2rem;
+  line-height: 4rem;
+}
+
+.content__main {
+  border-radius: 5.7rem;
+  border: 1px solid #63658a;
+  background-color: #292b48;
+  display: flex;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+.content__user {
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #41436b;
+  border-radius: 3.2rem;
+  border: 1px solid #64678f;
+  margin-right: 1rem;
+}
+.content__user-img {
+  height: 4.3rem;
+  width: 4.3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.content__user-img--emma {
+  background-image: url("./img/emma.png");
+  background-size: cover;
+  background-position: center;
+}
+.content__user-img--jim {
+  background-image: url("./img/jim.png");
+  background-size: 140%;
+  background-position: 90% 0rem;
+}
+.content__user-name {
+  font-size: 2rem;
+}
+.content__notify {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.content__notify-input {
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid #63658a;
+  height: 3rem;
+  width: 3rem;
+  background: #292b48;
+  border-radius: 3px;
+  margin-right: 1rem;
+  position: relative;
+}
+.content__notify-input::after {
+  content: "\f00c";
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.content__notify-input:checked::after {
+  opacity: 1;
+}
+.content__notify-label {
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.content__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6.3rem;
+}
+
+.feedback {
+  font-size: 1.8rem;
+  color: #717fff;
+  cursor: pointer;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+.btn {
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 2.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn--send {
+  background: #717fff;
+  transition: transform 0.2s;
+}
+.btn--cancel {
+  background: #292b48;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(0.95) translateY(-2px);
+}
