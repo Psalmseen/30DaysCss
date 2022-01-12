@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #e5e5e5;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #1b2442;
+}
+.wrapper {
+  width: 160rem;
+  background-color: #eceff8;
+  max-width: 98vw;
+  padding: 19.6rem 0;
+  display: grid;
+  place-content: center;
+}
+
+.content__title {
+  font-family: merriweather;
+  font-weight: 900;
+  font-size: 3.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  width: 104.7rem;
+  max-width: 95vw;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.event__time-detail {
+  text-align: center;
+  border-radius: 1rem;
+  width: 15.2rem;
+  padding: 3rem 0;
+  margin-right: 3rem;
+}
+.card--1 {
+  background: #eceff8;
+}
+.card--2 {
+  background: #f8ecf8;
+}
+.card--3 {
+  background: #f8ecec;
+}
+.card--4 {
+  background: #eef8ec;
+}
+.event__date {
+  font-family: mulish;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.event__time {
+  font-family: merriweather;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.event__details {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-right: 3.6rem;
+}
+
+.event__texts {
+  width: 52.4rem;
+  font-size: 1.8rem;
+}
+
+.event__title {
+  font-size: 2.6rem;
+  font-family: merriweather;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.add__sign {
+  font-size: 2.2rem;
+  line-height: 0;
+}
+.add {
+  padding: 1.6rem;
+  cursor: pointer;
+  align-self: flex-start;
+  border-radius: 1.5rem;
+}
+.add:hover {
+  background: #000;
+  color: #fff;
+}
