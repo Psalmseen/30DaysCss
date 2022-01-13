@@ -87,7 +87,7 @@ body {
   background-color: #292b48;
   display: flex;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   margin-top: 4rem;
 }
 .content__user {
