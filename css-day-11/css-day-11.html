@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="./css-day-11.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="title">Upload layered source file</h1>
+      <p class="title__text">
+        Please upload the layered source file of your design
+      </p>
+      <main class="main-content" id="main">
+        <div class="content__img"></div>
+        <p class="content__img-text">
+          Drag and drop the layered source file or
+        </p>
+        <input type="file" name="file" id="file" class="file" title=" " />
+        <label for="file" class="file__label">Browse computer</label>
+        <p class="file-detail" id="file-detail"></p>
+        <p class="bottom-text">
+          <span>&#183;</span> You can upload Sketch, Studio, Figma, Adobe XD,
+          Photoshop
+        </p>
+        <p class="bottom-text"><span>&#183;</span> Maximum file size is 10MB</p>
+      </main>
+    </section>
+  </body>
+  <script>
+    // SET UP FOR FILE NAME DISPLAY
+    const file = document.querySelector("#file");
+    file.addEventListener("change", (e) => {
+      const [file] = e.target.files;
+      const { name: fileName, size } = file;
+      const fileSize = (size / 1000).toFixed(2);
+      const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+      document.querySelector(".file-detail").innerHTML = fileNameAndSize;
+    });
+  </script>
+</html>

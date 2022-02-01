@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-color: #e5e5e5;
+  color: #202142;
+  font-family: poppins;
+}
+
+.container {
+  width: 132.2rem;
+  max-width: 98vw;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2.2rem 4.5rem -1.5rem #b1b1dfb3;
+  padding: 9rem 6rem;
+}
+.title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  font-family: "Merriweather";
+  margin-bottom: 2rem;
+}
+.title__text {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+.main-content {
+  background-color: #fcfcff;
+  padding: 5rem;
+  border: 3px dashed #a4a4cb;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.content__img {
+  width: 4.8rem;
+  height: 4.8rem;
+  background: url("./assets/Groupsrc.png");
+  background-size: cover;
+  margin: 0 auto 5rem;
+}
+
+.content__img-text {
+  font-family: mulish;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  color: #000;
+}
+
+.file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file__label {
+  font-weight: 500;
+  border: 1px solid #a4a4cb;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 5;
+}
+.file__label:hover,
+.file__label:focus {
+  transform: scale(1.05);
+}
+.file-detail {
+  margin-bottom: 4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  font-family: mulish;
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.bottom-text span {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-right: 0.4rem;
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+}
